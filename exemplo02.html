@@ -17,7 +17,7 @@
                 else
                     texto = "Ímpar";
 
-                entrada.innerHTML += `
+                saida.innerHTML += `
                   <div class="container">
                     <div class="painel-esquerdo">
                         <div class="avatar">
@@ -33,7 +33,8 @@
                         </main>
                     </div>
                   </div>
-                `
+                `;
+                i++;
             }
         }
     </script>
@@ -41,13 +42,12 @@
 
 <body>
     <main>
-        <section id="secao-entrada">
-            <input type="text" id="entrada">
+        <section class="secao-entrada">
+            <input type="text" id="entrada" placeholder="informe um número">
             <button onclick="processar()">OK</button>
         </section>
         <section class="secao-saida">
-            <div class="entrada">
-
+            <div id="saida">
             </div>
         </section>
     </main>
